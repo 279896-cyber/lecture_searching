@@ -41,6 +41,21 @@ def linear_search(sequential_data, number):
         "count": count
     }
 
+def binary_search(ordered_numbers, number):
+    left = 0
+    right = len(ordered_numbers)-1
+    while left <= right:
+        pulka = (left + right) //2
+
+        if number
+
+
+
+
+
+
+
+
 def main():
     sequential_data = read_data("sequential.json", "unordered_numbers")
     vysledek = linear_search(sequential_data, 20)
