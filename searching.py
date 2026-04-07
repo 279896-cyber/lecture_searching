@@ -24,10 +24,27 @@ def read_data(file_name, field):
 
 
 
+def linear_search(sequential_data, number):
+    positions = []
+    count = 0
+    idx = 0
+    while idx < len(sequential_data):
+        if sequential_data[idx] == number:
+
+            positions.append(idx)
+            count += 1
+        idx += 1
+
+    return {
+
+        "positions": positions,
+        "count": count
+    }
 
 def main():
     sequential_data = read_data("sequential.json", "unordered_numbers")
-
+    vysledek = linear_search(sequential_data, 20)
+    print(vysledek)
 
 if __name__ == '__main__':
     main()
